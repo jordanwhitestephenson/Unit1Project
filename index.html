@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title> Bark Park </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="main.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- Full Width Image Header -->
+    <header>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="title">
+                    <h1>Bark Finder</h1>
+
+                    <p><a href="#" class="btn btn-success btn-lg" id="MainButton">Places for Paws to Play </a></p>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <img src="logo2.png" class="logo">
+                </div>
+                <div class="words">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" id="BarkFinder">Bark Finder</a></li>
+                        <li><a href="#" id="JoinUs"> Join Us </a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!---GOOGLEMAPS--->
+
+    <div class="container">
+        <div class="AroundYou">
+            <h2> Searching for Barks.. </h2>
+            <a href="#" id="get_location"></a>
+        </div>
+        <div class="mapStyle">
+            <div class="container" id="map_canvas" style="height: 350px; width: 80%; border: 1px solid rgba(136, 233, 173, .1) ">
+            </div>
+            <div class="container" id="directions-canvas">
+            </div>
+        </div>
+    </div>
+    <!---Dog Park Info---->
+    <!-- <div class ="dogparkinfo">
+    </div> -->
+    <div class="container">
+        <div class="row">
+            <h2 class="miniTitle"> Closest Dog Parks To You</h2>
+            <div class=".col-xs-12 .col-md-8">
+                <div class="dialogbox">
+                    <dialog id="window">
+                        <h3>Sample Dialog!</h3>
+                        <p class = "header">What should we put in this header?</p>
+                        <button id="exit">Close Dialog</button>
+                    </dialog>
+                </div>
+                <div class="dogparkinfo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- More Pages Sectiont -->
+    <nav aria-label="Page navigation example">
+        <div class="pagenavigation">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only" id="loadMore">Previous</span>
+                    </a>
+                </li>
+
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container" id="gallery">
+        <hr class="featurette-divider">
+        <div class="featurette" id="aboutus">
+            <img class="featurette-image img-circle img-responsive pull-right" src="dog2.jpg">
+            <a href="dog2_h.jpg"></a>
+            <h2 class="featurette-heading"> Connecting paws with
+                <span class="text-muted">places for them to play</span>
+            </h2>
+            <p class="lead">Here at BarkFinder, our mission is to provide all local "paw friendly" activities. </p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Second Featurette -->
+        <div class="featurette" id="secondFeaturette">
+            <img class="featurette-image img-circle img-responsive pull-left" src="dog3.jpg">
+            <a href="dog3_h.jpg"></a>
+            <h2 class="featurette-heading"> Featured Barker
+                <span class="text-muted"></span>
+            </h2>
+            <p class="lead"> Want a free BarkFinder bumper sticker? Send us a picture of your local dog park or use the #BarkFinder and you could be next month's Featured Barker!</p>
+        </div>
+    </div>
+    <hr class="featurette-divider">
+
+
+    <!-- Sign Up Featurette -->
+    
+
+      <div class = "signup">
+
+
+        <h2 class="featurette-heading" id="signUp"> BarkFinder's Newsletter Sign Up</h2>
+        <form>
+            <div class="col-lg-6">
+              <div class="form-group">
+                  <center>
+                    <label for="InputNameFirst">Enter Name</label></center>
+                    <div class="input-group">
+                        <input type="text" class="InputNameFirst" placeholder="Enter Name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <center>
+                  <label for="InputEmailFirst">Enter Email</label>
+                    </center>
+                    <div class="input-group">
+                        <center>
+                      <input type="email" class="InputEmailFirst" placeholder="Enter Email" required>
+                        </center>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <center>
+                      <label for="InputMessageFirst">Any Feedback?</label>
+                      </center>
+                    <div class="input-group">
+                        <input type="text" class="InputMessageFirst" placeholder ="Enter Message" required>
+                    </div>
+                </div>
+                <center>
+                <input type="submit" name="submit" id= "submit" value="Submit" class="btn btn-info">
+              </center>
+            </div>
+        </form>
+
+    </div>
+
+
+
+    <footer class="page-row">
+        <section class="container-fluid">
+            <p>Copyright @ 2017 Built By Jordan Stephenson</p>
+
+        </section>
+
+    </footer>
+
+
+
+    <!-- /.container -->
+
+    <!-- Scripts -->
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.0.6-development-only.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDres7kYD6e0HNJB8qKUQ9CO4O-NlduBWM&libraries=places"></script>
+    <link href="https://maps.googleapis.com/maps/api/place/photo?maxwidth=200&photoreference=CnRtAAAATLZNl354RwP_9UKbQ_5Psy40texXePv4oAlgP4qNEkdIrkyse7rPXYGd9D_Uj1rVsQdWT4oRz4QrYAJNpFX7rzqqMlZw2h2E2y5IKMUZ7ouD_SlcHxYq1yL4KbKUv3qtWgTK0A6QbGh87GB3sscrHRIQiG2RrmU_jF4tENr9wGS_YxoUSSDrYjWmrNfeEHSGSc3FyhNLlBU&key=AIzaSyDres7kYD6e0HNJB8qKUQ9CO4O-NlduBWM">
+
+
+    <!-- jQuery -->
+    <script src="mainA.js"></script>
+
+    <!-- </div> -->
+
+</body>
+
+</html>
